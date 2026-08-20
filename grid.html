@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid html</title>
+  </head>
+  <body style="padding-bottom: 1000px">
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px;
+      "
+    >
+      <div style="background-color: palevioletred">div 1</div>
+      <div style="background-color: blue">
+        div 2
+        <p>text</p>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+      "
+    >
+      <div style="background-color: palevioletred">100px</div>
+
+      <div style="background-color: blue">
+        100px
+        <p>text</p>
+      </div>
+
+      <div style="background-color: palevioletred">200px</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      "
+    >
+      <div style="background-color: palevioletred">100px</div>
+
+      <div style="background-color: blue">1fr</div>
+    </div>
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         column-gap:20px;
+         row-gap: 40px;
+        
+
+      "
+      
+    >
+      <div style="background-color: palevioletred; height: 200px">100px</div>
+
+      <div style="background-color: blue; height: 200px">1fr</div>
+      <div style="background-color: rgb(0, 255, 94); height: 200px">1fr</div>
+       <div style="background-color: palevioletred; height: 200px">100px</div>
+
+      <div style="background-color: blue; height: 200px">1fr</div>
+      <div style="background-color: rgb(0, 255, 94); height: 200px">1fr</div
+    </div>
+  </body>
+</html>

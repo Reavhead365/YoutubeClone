@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding-top: 70px; /* Prevents fixed header from overlapping content */
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+p {
+  font-family: "Roboto", Arial, sans-serif;
+}

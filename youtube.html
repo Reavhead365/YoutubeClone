@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>YouTube.com Clone</title>
+
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/video.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <!-- Left Section -->
+      <div class="left-section">
+        <button class="icon-button hamburger-menu">
+          <svg viewBox="0 0 24 24" class="header-icon">
+            <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+          </svg>
+        </button>
+
+        <div class="youtube-logo-container">
+          <img
+            class="youtube-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+            alt="YouTube Logo"
+          />
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="middle-section">
+        <div class="search-container">
+          <input class="search-bar" type="text" placeholder="Search" />
+          <button class="search-button" title="Search">
+            <svg viewBox="0 0 24 24" class="header-icon">
+              <path
+                d="M20.87 20.17l-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <button
+          class="icon-button voice-search-button"
+          title="Search with your voice"
+        >
+          <svg viewBox="0 0 24 24" class="header-icon">
+            <path
+              d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zM17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Section (Updated with Profile Button) -->
+      <div class="right-section">
+        <button class="icon-button" title="Create">
+          <svg viewBox="0 0 24 24" class="header-icon">
+            <path
+              d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14V6zM2 4h16v16H2V4zm18 3h2v12h-2V7z"
+            ></path>
+          </svg>
+        </button>
+        <button class="icon-button" title="Notifications">
+          <svg viewBox="0 0 24 24" class="header-icon">
+            <path
+              d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-3v-1l-2-1v-5c0-3.07-1.64-5.64-4.5-6.32V3c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 4.36 6 6.92 6 10v5l-2 1v1h16z"
+            ></path>
+          </svg>
+        </button>
+        <button class="user-profile-button" title="Your Account">
+          <div class="profile-avatar-letter">H</div>
+        </button>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <!-- Video 1 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/data.jpg"
+            alt="DBMS Tutorial"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="channel_pictures/channel-1.jpg"
+              alt="Gate Smashers"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Lec-1: DBMS Syllabus for GATE, UGCNET, NIELIT, DSSSB etc.
+            </p>
+            <p class="video-author">Gate Smashers</p>
+            <p class="video-stats">2.8M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/hq720.avif"
+            alt="HTML CSS Course"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="channel_pictures/channel-2.jpg"
+              alt="SuperSimpleDev"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+            <p class="video-author">SuperSimpleDev</p>
+            <p class="video-stats">821K subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/1/600/338"
+            alt="JavaScript Tutorial"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/64/100/100"
+              alt="CodeWithHarry"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              JavaScript Tutorial for Beginners in Hindi | Full Course
+            </p>
+            <p class="video-author">CodeWithHarry</p>
+            <p class="video-stats">4.5M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/180/600/338"
+            alt="React Crash Course"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1005/100/100"
+              alt="Fireship"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              React in 100 Seconds | Build Modern Web Applications
+            </p>
+            <p class="video-author">Fireship</p>
+            <p class="video-stats">3.1M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/119/600/338"
+            alt="Python Data Science"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1025/100/100"
+              alt="FreeCodeCamp"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Python Data Science & Machine Learning Bootcamp
+            </p>
+            <p class="video-author">freeCodeCamp.org</p>
+            <p class="video-stats">9.2M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/3/600/338"
+            alt="Git Github Tutorial"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1012/100/100"
+              alt="Traversy Media"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Git & GitHub Crash Course For Beginners</p>
+            <p class="video-author">Traversy Media</p>
+            <p class="video-stats">2.1M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 7 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/20/600/338"
+            alt="UI UX Design"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1027/100/100"
+              alt="DesignCourse"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Figma UI UX Design Tutorial for Absolute Beginners
+            </p>
+            <p class="video-author">DesignCourse</p>
+            <p class="video-stats">1.1M subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 8 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/60/600/338"
+            alt="CSS Flexbox & Grid"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1062/100/100"
+              alt="Kevin Powell"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Master CSS Grid & Flexbox in 30 Minutes</p>
+            <p class="video-author">Kevin Powell</p>
+            <p class="video-stats">850K subscribers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 9 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="https://picsum.photos/id/96/600/338"
+            alt="Node JS"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="https://picsum.photos/id/1074/100/100"
+              alt="Web Dev Simplified"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Node.js and Express.js Full Course - Build Backend APIs
+            </p>
+            <p class="video-author">Web Dev Simplified</p>
+            <p class="video-stats">1.4M subscribers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
